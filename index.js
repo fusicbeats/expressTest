@@ -2,11 +2,11 @@ import express from "express"
 const app = express()
 const port =3000;
 
-app.use("/",(req,res)=>{
+app.get("/",(req,res)=>{
     res.send("Hello My name is donald trump");
 })
 
-app.use("/about",(req,res)=>{
+app.get("/about",(req,res)=>{
     res.send("I am going to be the precident");
 })
 
